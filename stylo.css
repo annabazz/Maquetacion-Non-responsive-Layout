@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: pink;
+}
+
+#projects{
+    max-width: 1300px;
+    height: 1500vh;
+    background-color: white;
+}
+
+.container { 
+     display: grid;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 5px ;
+    padding: 10px;
+    border-style: groove 20px red;
+    
+    grid-auto-flow: row;
+    
+    grid-template-areas:
+      "photo-9 photo-2 photo-2 photo-2 photo-2 photo-6"
+      "photo-9 photo-7 photo-7 photo-3 photo-3 photo-0"
+      "photo-9 photo-7 photo-7 photo-3 photo-3 photo-0"
+      "photo-9 photo-8 photo-8 photo-5 photo-5 photo-0"
+      "photo-9 photo-8 photo-8 photo-4 photo-4 photo-0"
+      "photo-9 photo-8 photo-8 photo-4 photo-4 photo-0"
+      "photo-9 photo-8 photo-8 photo-4 photo-4 photo-0";
+  }
+  /*-----------*/
+  .photo-2 { 
+    grid-area: photo-2; 
+    background: white;
+    border-style: solid 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+ }
+
+ h1{
+  color: #E52328;
+  margin: 25px 0 ;
+  margin-right: auto;
+  text-align: left;
+  font-size: 40px;
+ }
+
+.photo-2 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  color: #002891;
+  
+}
+.menu ul{
+  display: flex;
+  
+}
+.menu li{
+  margin-top: -15px ;
+  padding: 0.5rem;
+}
+
+
+.menu .icon-user  {
+  margin:5px  ;
+}
+
+.menu .icon-bell {
+margin-left: 10px ;
+  
+} 
+.menu .icon-target {
+ margin-left: 10px ;
+}
+
+/*-----*/
+ 
+  
+  .photo-5 { 
+    grid-area: photo-5; 
+    background-color:white;
+    border: thin solid#c8c4c4 ;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #cbc7c7;
+    border-radius: 20px;
+    color: #002891;
+    display:inline;   
+   
+}
+
+h3{
+ text-align: left;
+  margin: 5px 10px;
+  margin-top: 10px ;
+  
+}
+.icon-loop2{
+  text-align: left; 
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+ 
+.bt-5 {
+  
+  padding: 15px;
+  margin-left: 250px;
+  margin-bottom: 15px;
+  background-color: #3166AE;
+  color: white;
+  font-size: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 62px;
+  height: 20px;
+}
+
+
+p{
+  text-align: left;
+  margin-left: 40px; 
+}
+
+/*-----------------------*/
+  .photo-6 {
+     grid-area: photo-6;
+     background-color:white;
+     color:#3166AE; 
+     overflow: hidden;
+ }
+
+ .icon-bubbles4{
+  margin:90px;
+  padding: 5px;
+  margin-right: 75px;
+ display: block;
+
+ }
+  /*------*/
+  .photo-3 { 
+    grid-area: photo-3;
+    background-color:#002891;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:  30px -25px #987E3D, 38px -48px rgb(67, 66, 66);
+    overflow: hidden;
+ }
+
+.photo-3 p{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.photo-3 .p-3{
+  text-align: left;
+  margin: 5px;
+  margin-top:8px ;
+  font-size: 15px;
+}
+.photo-3 .p-tx{
+  text-align: right;
+  margin: 10px;
+  font-size: 20px;
+
+}
+.photo-3 .p-tx3{
+text-align: left;
+margin: 5px;
+margin-top: -29px;
+font-size: 17px;
+}
+
+.photo-3 .pfech-3{
+  text-align: right;
+  margin-top:48px ;
+  font-size: 15px;
+  margin: 5px;
+  
+}
+
+.img-3{
+  margin: 15px;
+  margin-left: 20px;
+  border-radius: 5px; 
+  width: 80px;
+}
+
+ .icon-visa{
+  color: white;
+  margin-left: 150px;
+  
+ }
+
+ /*-----------*/ 
+  .photo-4 {
+     grid-area: photo-4;
+     background-color:white;
+     border: thin solid#c8c4c4 ;
+     box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #cbc7c7;
+     border-radius: 20px;
+     overflow: hidden;
+}
+
+.photo-4 p{
+  text-align: left;
+  color:#002891;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.bt-4{
+  margin-bottom: 1.5px ;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: #3166AE;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+ 
+}
+.img-4{
+  margin-top: -70px;
+  margin-left: 200px; 
+}
+
+
+ /*--------------------*/ 
+  .photo-7 {
+     grid-area: photo-7;
+     background-color:white;
+     border: thin solid#c8c4c4 ;
+     box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #c8c4c4;/*mov-x mov-y blur-radius spread-blur color y puede ser inset(dentro)/outset(fuera) */
+     border-radius: 20px;
+     overflow: hidden;
+ }
+
+ .photo-7 p{
+  color: #002891;
+  margin: 5px 5px;
+  text-align: center;
+  
+ }
+  .im-7{
+   background-image: url(asset/1g.png);
+   background-size: cover;
+   height: 200px;
+ 
+ }
+ 
+
+ /*-----------------*/
+  .photo-8 {
+     grid-area: photo-8;
+     background-color:white;
+     border: thin solid#c8c4c4 ;
+     box-shadow: 0.2rem 0.2rem 1rem 0.2rem #c8c4c4;
+     border-radius: 20px;
+    
+     
+}
+
+.photo-8 h2{
+  color: #002891;
+  margin: 2px 2px;
+  text-align: left;
+}
+
+.photo-8 .pe{
+  color: #002891;
+  text-align: right;
+}
+
+ol{
+  display:inline;
+}
+
+.pe{
+  text-align: left;
+  margin: 5px 5px;
+  margin-top: -20px ;
+}
+
+h6{
+  text-align: center;
+  margin: 5px 5px;
+  margin-top: -12px ;
+  
+}
+
+input {
+  margin-top: -20px;
+  margin-left: 90px;
+  background-color: #3166AE;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+
+
+/*------------------*/
+
+  .photo-9 { 
+    
+    grid-area: photo-9; 
+    background: linear-gradient( #002891 30%,#3166AE 70%) ;
+    text-align: center; 
+    color:white ;  
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+h5 {
+  margin: 30px 0 0;
+  margin-left: -35px;
+  font-weight: lighter;
+}
+
+ 
+ul, li  {
+  margin: 20px 0;
+  padding-left: 10px;
+  list-style: none;
+  text-align:left ;
+}
+   
+  ul, span  {
+   
+    vertical-align:top;
+    margin: 20px 0;
+  
+  }
+
+  .icon-briefcase1{
+    margin: 35px;
+  }
+  .icon-percent{
+    margin: 20px;
+  }
+  .icon-point-up{
+    margin: 10px;
+  }
+  .icon-umbrella{
+    margin: 45px;
+  }
+  .icon-target{
+    margin: 51px;
+  }
+
+  .pho-9 {
+    
+    margin: 70px 0;
+    padding-top: 200px;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  
+ 
